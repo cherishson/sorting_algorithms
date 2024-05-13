@@ -2,6 +2,7 @@
 #define SORT_H
 
 #include <stddef.h>
+#include <stdio.h>
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -38,7 +39,11 @@ void heap_sort(int *array, size_t size);
 void build_max_heap(int *array, size_t size);
 void heapify(int *array, size_t size, size_t heapSize, size_t parentIndex);
 void swap_nodes(int *array, size_t size, size_t indexA, size_t indexB);
+void counting_sort_2(int *array, size_t size, int d);
 void radix_sort(int *array, size_t size);
+void order(char arr, int *array, size_t size);
+void merge_array(char arr, int *array, size_t size);
+void bitonic_recursive(char arr, int *array, size_t size, size_t i);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
